@@ -1,0 +1,36 @@
+.ourwork-section {
+  padding-top: 47px;
+}
+
+.ourwork__list {
+  display: flex;
+}
+
+.ourwork__item + .ourwork__item {
+  margin-left: 30px;
+}
+
+.ourwork__item {
+  position: relative;
+  width: 370px;
+}
+
+.ourwork__title {
+  margin-bottom: 50px;
+}
+
+.ourwork__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+
+  padding: 27px 0;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primery-bgc);
+  background-color: rgba(47, 48, 58, 0.8);
+}

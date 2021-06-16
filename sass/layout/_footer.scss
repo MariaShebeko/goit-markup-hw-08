@@ -1,0 +1,150 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--accent-bgc);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-address {
+  margin-right: 70px;
+}
+
+.logo-light {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--primery-bgc);
+
+  font-family: Raleway, sans-serif;
+
+  @include font(26px, 700, 1.2);
+}
+
+.footer-contacts__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-contacts__address {
+  color: var(--primery-bgc);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  @include font($fw: 500);
+
+  letter-spacing: 0.02em;
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.social__title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--primery-bgc);
+}
+
+.social__list-footer {
+  display: flex;
+}
+
+.footer .social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer .social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer .social__icon {
+  fill: var(--primery-bgc);
+}
+
+.container-footer-form {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form__title {
+  margin-bottom: 20px;
+
+  color: var(--primery-bgc);
+
+  @include font();
+
+  text-transform: uppercase;
+}
+
+.footer-form__input {
+  @include dimensions(358px, 50px);
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--primery-bgc);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-form__button {
+  @extend %display-center;
+  @include dimensions(200px, 50px);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  font-family: inherit;
+
+  @include font(16px, 700, 1.87);
+
+  letter-spacing: 0.06em;
+
+  color: var(--primery-bgc);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-hover-color);
+  }
+}
+
+.footer-form__icon {
+  margin-left: 10px;
+}

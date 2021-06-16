@@ -1,0 +1,30 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  @extend %display-center;
+  @include dimensions(44px, 44px);
+  background-color: transparent;
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social__icon {
+  @include dimensions(20px, 20px);
+  fill: #afb1b8;
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--primery-bgc);
+
+    transition: fill 250ms var(--timing-function);
+  }
+}
