@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--Site heading-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header-container container">
         <nav class="header__nav">
           <a href="./index.html" class="logo header__logo link"
@@ -54,15 +54,15 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!--Main heading (hero)-->
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
       <!--Advantages-->
       <section class="section advantages-section">
         <div class="container">
@@ -113,13 +113,12 @@
         </div>
       </section>
       <!--Our work-->
-      <section class="ourwork-section section">
+      <!-- <section class="ourwork-section section">
         <div class="container">
           <h2 class="ourwork__title section-title">Чем мы занимаемся</h2>
           <ul class="ourwork__list list">
             <li class="ourwork__item">
               <img
-                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="человек набирает текст на клавиатуре"
                 width="370"
@@ -129,7 +128,6 @@
             </li>
             <li class="ourwork__item">
               <img
-                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
                 src="./images/box2.jpg"
                 alt="телефон в руках"
                 width="370"
@@ -139,7 +137,6 @@
             </li>
             <li class="ourwork__item">
               <img
-                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
                 src="./images/box3.jpg"
                 alt="планшет в руках"
                 width="370"
@@ -149,20 +146,43 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Our team-->
-      <section class="section team-section">
+      <!-- <section class="section team-section">
         <div class="container team-container">
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                class="team__image"
-                srcset="./images/foto1@2x.jpg 2x"
-                src="./images/foto1.jpg"
-                alt="фото мужчины"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/foto1.webp 1x, ./images/foto1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto1.jpg 1x, ./images/foto1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/foto1-tab.webp 1x, ./images/foto1-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto1-tab.jpg 1x, ./images/foto1-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/foto1-mob.webp 1x, ./images/foto1-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto1-mob.jpg 1x, ./images/foto1-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/foto1.jpg" alt="фото мужчины" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -200,13 +220,36 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__image"
-                srcset="./images/foto2@2x.jpg 2x"
-                src="./images/foto2.jpg"
-                alt="фото женщины"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/foto2.webp 1x, ./images/foto2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto2.jpg 1x, ./images/foto2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/foto2-tab.webp 1x, ./images/foto2-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto2-tab.jpg 1x, ./images/foto2-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/foto2-mob.webp 1x, ./images/foto2-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto2-mob.jpg 1x, ./images/foto2-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/foto2.jpg" alt="фото женщины" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -244,13 +287,36 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__image"
-                srcset="./images/foto3@2x.jpg 2x"
-                src="./images/foto3.jpg"
-                alt="фото мужчины"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/foto3.webp 1x, ./images/foto3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto3.jpg 1x, ./images/foto3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/foto3-tab.webp 1x, ./images/foto3-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto3-tab.jpg 1x, ./images/foto3-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/foto3-mob.webp 1x, ./images/foto3-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto3-mob.jpg 1x, ./images/foto3-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/foto3.jpg" alt="фото мужчины" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -288,13 +354,36 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__image"
-                srcset="./images/foto4@2x.jpg 2x"
-                src="./images/foto4.jpg"
-                alt="фото мужчины"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/foto4.webp 1x, ./images/foto4@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto4.jpg 1x, ./images/foto4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/foto4-tab.webp 1x, ./images/foto4-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto4-tab.jpg 1x, ./images/foto4-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/foto4-mob.webp 1x, ./images/foto4-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/foto4-mob.jpg 1x, ./images/foto4-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/foto4.jpg" alt="фото мужчины" />
+              </picture>
               <div class="team__item-wrapper">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -332,11 +421,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Clients-section -->
 
-      <section class="section clients-section">
+      <!-- <section class="section clients-section">
         <div class="container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
           <ul class="clients__list list">
@@ -384,10 +473,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
+
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="container-address">
           <a href="./index.html" class="logo-light link"
@@ -543,6 +633,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
