@@ -1,5 +1,32 @@
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+
+  .header {
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__burger-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+    }
+
+    &__burger-icon {
+      @include dimensions(40px, 40px);
+      fill: var(--web-color);
+    }
+  }
+}
+
 .header {
-  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* =========== Стилизация логотипа =========*/
@@ -10,7 +37,6 @@
 }
 
 .header__logo {
-  margin-right: 93px;
   color: var(--web-color);
 }
 
@@ -18,89 +44,59 @@
   color: var(--accent-color);
 }
 
-/* ============== Стилизация панели навигации =====*/
+// 768+
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid #ececec;
 
-.menu {
-  display: flex;
-}
+    &__burger-button {
+      display: none;
+    }
+  }
 
-.menu__item + .menu__item {
-  margin-left: 50px;
-}
+  .header-container,
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
 
-.menu__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  .contacts__link {
+    display: flex;
+    align-items: center;
+    color: var(--primery-text-color);
 
-  color: var(--title-text-color);
+    @include font($fw: 500);
+    letter-spacing: 0.02em;
 
-  @include font(14px, 500, 1.14);
-  letter-spacing: 0.02em;
+    transition: color 250ms var(--timing-function);
 
-  transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  .contacts__icon {
+    margin-right: 10px;
+    fill: var(--primery-text-color);
+
+    transition: fill 250ms var(--timing-function);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+      fill: var(--accent-color);
+    }
   }
 }
 
-.menu__link.current {
-  position: relative;
-  color: var(--accent-color);
-
-  &::after {
-    position: absolute;
-    bottom: -1px;
-    content: '';
-    display: block;
-
-    @include dimensions(100%, 4px);
-    border-radius: 2px;
-    background-color: var(--accent-color);
+// 1200+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
   }
-}
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts__item + .contacts__item {
-  margin-left: 50px;
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  color: var(--primery-text-color);
-
-  @include font($fw: 500);
-  letter-spacing: 0.02em;
-
-  transition: color 250ms var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.header-container,
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-
-.contacts__icon {
-  margin-right: 10px;
-  fill: var(--primery-text-color);
-
-  transition: fill 250ms var(--timing-function);
-
-  .contacts__link:hover &,
-  .contacts__link:focus & {
-    fill: var(--accent-color);
+  .contacts__item + .contacts__item {
+    margin-left: 50px;
   }
 }
