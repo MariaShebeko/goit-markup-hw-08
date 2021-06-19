@@ -152,6 +152,10 @@
 
 // 1200+
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+  }
+
   .footer-container {
     display: flex;
     align-items: baseline;
