@@ -24,14 +24,10 @@
   }
 }
 
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 /* =========== Стилизация логотипа =========*/
 
 .logo {
+  margin-right: 88px;
   font-family: Raleway, sans-serif;
   @include font(26px, 700, 1.2);
 }
@@ -54,10 +50,15 @@
     }
   }
 
-  .header-container,
+  .header__container,
   .header__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .contacts__link {
@@ -94,6 +95,10 @@
   .contacts {
     display: flex;
     margin-left: auto;
+  }
+
+  .contacts__item {
+    margin-bottom: 0;
   }
 
   .contacts__item + .contacts__item {

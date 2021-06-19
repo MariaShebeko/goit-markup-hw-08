@@ -493,13 +493,9 @@ body {
   }
 }
 
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 /* =========== Стилизация логотипа =========*/
 .logo {
+  margin-right: 88px;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -521,10 +517,14 @@ body {
   .header__burger-button {
     display: none;
   }
-  .header-container,
+  .header__container,
   .header__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
   .contacts__link {
     display: flex;
@@ -554,6 +554,9 @@ body {
   .contacts {
     display: flex;
     margin-left: auto;
+  }
+  .contacts__item {
+    margin-bottom: 0;
   }
   .contacts__item + .contacts__item {
     margin-left: 50px;
