@@ -845,16 +845,8 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   background-color: var(--accent-bgc);
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.container-address {
-  margin-right: 70px;
 }
 
 .logo-light {
@@ -867,12 +859,8 @@ body {
   line-height: 1.2;
 }
 
-.footer-contacts__item {
-  margin-bottom: 9px;
-}
-
-.footer-contacts__item:last-child {
-  margin-bottom: 0;
+.footer-contacts {
+  margin-bottom: 60px;
 }
 
 .footer-contacts__address {
@@ -880,6 +868,14 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-contacts__item {
+  margin-bottom: 9px;
+}
+
+.footer-contacts__item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-contacts__link {
@@ -904,6 +900,8 @@ body {
 
 .social__list-footer {
   display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer .social__item:not(:last-child) {
@@ -923,14 +921,6 @@ body {
   fill: var(--primery-bgc);
 }
 
-.container-footer-form {
-  margin-left: 93px;
-}
-
-.footer-form {
-  display: flex;
-}
-
 .footer-form__title {
   margin-bottom: 20px;
   color: var(--primery-bgc);
@@ -941,10 +931,11 @@ body {
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: var(--primery-bgc);
@@ -956,7 +947,7 @@ body {
 .footer-form__button {
   width: 200px;
   height: 50px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   cursor: pointer;
   font-family: inherit;
@@ -978,6 +969,30 @@ body {
 
 .footer-form__icon {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container__tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .container-address {
+    margin-right: 70px;
+  }
+  .container-footer-form {
+    margin-left: 93px;
+  }
+  .footer-form {
+    display: flex;
+  }
 }
 
 /* ============ Buttons (filtr) section ==========*/
