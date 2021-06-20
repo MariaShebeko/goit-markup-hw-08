@@ -8,10 +8,6 @@
   }
 
   .header {
-    border-bottom: 1px solid #ececec;
-  }
-
-  .header {
     &__nav {
       display: flex;
       justify-content: space-between;
@@ -32,6 +28,9 @@
   }
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 /* =========== Стилизация логотипа =========*/
 
 .logo {

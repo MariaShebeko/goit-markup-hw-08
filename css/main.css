@@ -478,9 +478,6 @@ body {
   .header__container {
     padding: 15px 16px;
   }
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
   .header__nav {
     display: flex;
     justify-content: space-between;
@@ -497,6 +494,10 @@ body {
     height: 40px;
     fill: var(--web-color);
   }
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* =========== Стилизация логотипа =========*/
