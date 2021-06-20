@@ -568,6 +568,7 @@ body {
 }
 
 .hero {
+  margin: 0 auto;
   max-width: 480px;
   min-height: 400px;
   background-color: #c4c4c4;
