@@ -530,6 +530,15 @@ body {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contacts__item:not(:last-child):not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .contacts__link {
     display: flex;
     align-items: center;
@@ -558,9 +567,6 @@ body {
   .contacts {
     display: flex;
     margin-left: auto;
-  }
-  .contacts__item {
-    margin-bottom: 0;
   }
   .contacts__item + .contacts__item {
     margin-left: 50px;
@@ -810,11 +816,14 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .team__item {
+    margin-bottom: 30px;
+  }
+  .team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
   .team__item:not(:nth-child(2n)) {
     margin-right: 30px;
-  }
-  .team__item:not(:nth-child(-n + 2)) {
-    margin-bottom: 0;
   }
   .team__item-wrapper {
     padding-left: 74px;
@@ -953,6 +962,10 @@ body {
   color: var(--accent-color);
 }
 
+.container-social-list {
+  margin-bottom: 60px;
+}
+
 .social__title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -963,7 +976,6 @@ body {
 .social__list-footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer .social__item:not(:last-child) {
@@ -1049,6 +1061,9 @@ body {
     display: flex;
     align-items: baseline;
   }
+  .footer-contacts {
+    margin-bottom: 0px;
+  }
   .container-address {
     margin-right: 70px;
   }
@@ -1057,6 +1072,10 @@ body {
   }
   .footer-form {
     display: flex;
+  }
+  .footer-form__input {
+    width: 358px;
+    height: 50px;
   }
 }
 
@@ -1072,9 +1091,21 @@ body {
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .buttons__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .buttons__item:nth-child(2n + 3) {
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .buttons__list {
     justify-content: center;
+  }
+  .buttons__item {
+    margin-bottom: 0;
   }
 }
 
@@ -1108,8 +1139,10 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallery__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .gallery__link {

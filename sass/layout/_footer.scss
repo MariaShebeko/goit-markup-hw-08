@@ -51,6 +51,10 @@
   }
 }
 
+.container-social-list {
+  margin-bottom: 60px;
+}
+
 .social__title {
   margin-bottom: 20px;
 
@@ -62,7 +66,6 @@
 .social__list-footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer .social__item {
@@ -161,6 +164,10 @@
     align-items: baseline;
   }
 
+  .footer-contacts {
+    margin-bottom: 0px;
+  }
+
   .container-address {
     margin-right: 70px;
   }
@@ -171,5 +178,9 @@
 
   .footer-form {
     display: flex;
+  }
+
+  .footer-form__input {
+    @include dimensions(358px, 50px);
   }
 }

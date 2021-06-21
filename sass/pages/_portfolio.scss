@@ -9,6 +9,16 @@
 .buttons__item {
   margin-right: 8px;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 767px) {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n + 3) {
+      margin-right: 0;
+    }
+  }
 }
 
 // 768+
@@ -16,10 +26,11 @@
   .buttons__list {
     justify-content: center;
   }
+
+  .buttons__item {
+    margin-bottom: 0;
+  }
 }
-// .buttons__item + .buttons__item {
-//   margin-left: 8px;
-// }
 
 .button {
   padding: 6px 22px;
@@ -59,8 +70,10 @@
   }
 }
 
-.gallery__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .gallery__link {

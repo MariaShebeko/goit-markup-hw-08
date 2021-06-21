@@ -64,6 +64,12 @@
 
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .contacts__link {
@@ -100,10 +106,6 @@
   .contacts {
     display: flex;
     margin-left: auto;
-  }
-
-  .contacts__item {
-    margin-bottom: 0;
   }
 
   .contacts__item + .contacts__item {
