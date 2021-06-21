@@ -1190,6 +1190,9 @@ body {
   .gallery__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
+  .gallery__title-thumb--down {
+    padding-bottom: 56px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
