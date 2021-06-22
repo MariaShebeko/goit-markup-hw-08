@@ -523,7 +523,6 @@ body {
 
 /* =========== Стилизация логотипа =========*/
 .logo {
-  margin-right: 88px;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -585,6 +584,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 88px;
+  }
   .contacts {
     display: flex;
     margin-left: auto;
@@ -678,7 +680,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    width: 696px;
+    max-width: 696px;
     padding: 0;
   }
   .hero__title {

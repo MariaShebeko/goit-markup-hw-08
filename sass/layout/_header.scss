@@ -36,7 +36,6 @@
 /* =========== Стилизация логотипа =========*/
 
 .logo {
-  margin-right: 88px;
   font-family: Raleway, sans-serif;
   @include font(26px, 700, 1.2);
 }
@@ -105,6 +104,10 @@
 
 // 1200+
 @media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 88px;
+  }
+
   .contacts {
     display: flex;
     margin-left: auto;
