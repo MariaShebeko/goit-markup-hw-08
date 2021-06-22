@@ -44,16 +44,8 @@
 
 // 768+
 @media screen and (min-width: 768px) {
-  .clients__link {
-    width: 226px;
-  }
-
   .clients__item {
-    margin-bottom: 30px;
-
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -62,11 +54,8 @@
   .clients__title {
     margin-bottom: 50px;
   }
-  .clients__item {
-    margin-bottom: 0px;
-  }
 
-  .clients__link {
-    width: 170px;
+  .clients__item {
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
