@@ -5,20 +5,20 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  margin: -15px;
 }
 
 .clients__item {
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 2);
 
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
+  height: 92px;
+  margin: 15px;
 }
 
 .clients__link {
   @extend %display-center;
-  @include dimensions(210px, 92px);
+  @include dimensions(100%, 100%);
 
   border: 1px solid #afb1b8;
   border-radius: 4px;

@@ -20,10 +20,8 @@
 }
 
 .team__item-wrapper {
-  margin-top: 30px;
-  margin-bottom: 24px;
-  padding-left: 122px;
-  padding-right: 122px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team__name {
@@ -60,11 +58,6 @@
       margin-right: 30px;
     }
   }
-
-  .team__item-wrapper {
-    padding-left: 74px;
-    padding-right: 74px;
-  }
 }
 
 // 1200+
@@ -81,12 +74,5 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
-  }
-
-  .team__item-wrapper {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }

@@ -100,7 +100,8 @@
 }
 
 .footer-form__input {
-  @include dimensions(450px, 50px);
+  width: 100%;
+  height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
   margin-bottom: 20px;
