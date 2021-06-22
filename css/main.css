@@ -316,6 +316,7 @@ body {
 
 .modal-form-checkbox-policy {
   margin-bottom: 30px;
+  font-size: 12px;
 }
 
 .modal-form-checkbox-policy::before {
